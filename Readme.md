@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Elya Popova](https://up.htmlacademy.ru/htmlcss/24/user/864807).
-* Наставник: `Максим Пушкарев`.
+* Наставник: `Максим Пушкарев`(https://htmlacademy.ru/profile/id87167).
 
 ---
 
