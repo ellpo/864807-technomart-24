@@ -32,7 +32,7 @@
             <!-- картинка входа заработает через псевдоэлемент -->
           </li>
           <li>
-            <a href="#">Регистрация</a>
+            <a href="registration.html">Регистрация</a>
           </li>
         </ul>
       </div>
@@ -253,9 +253,8 @@
             <img src="img/small-map.jpg" width="300" height="158"/>
           </a>
           <p class="feedback">
-            <a href="map.service.ru">Заблудились? Напишите нам!</a>
+            <a href="#">Заблудились? Напишите нам!</a>
           </p>
-          <!-- здесь будет форма обратной связи -->
         </div>
       </section>
     </main>
@@ -306,5 +305,55 @@
         </p>
       </div>
     </footer>
+    <section class="modal modal-registration">
+      <h3 class="visually-hidden">Форма регистрации нового пользователя</h3>
+      <form class="registration-form" method="post"
+        action="https://echo.htmlacademy.ru">
+        <div>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name"class="registration-user" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </div>
+      <button class="button-send" type="submit">Отправить</button>
+      </form>
+    </section>
+    <section class="modal modal-feedback">
+      <h3 class="visually-hidden">Форма обратной связи</h3>
+      <form class="feedback-form" method="post"
+        action="https://echo.htmlacademy.ru">
+        <ul>
+          <li>
+            <label for="user-name_feedback">Ваше имя:</label>
+            <input id="user-name_feedback" class="name_feedback" type="text" name="name" placeholder="Имя Фамилия">
+          </li>
+          <li>
+            <label for="user-mail_feedback">Ваш e-mail:</label>
+            <input id="user-mail_feedback" class="mail_feedback" type="text" name="mail" placeholder="email@example.com">
+          </li>
+          <li>
+            <label for="text-field">Текст письма:
+            <textarea name="text" id="text-field" rows="8" placeholder="В свободной форме"></textarea>
+          </label>
+          </li>
+        </ul>
+      <button class="button-send" type="submit">Отправить</button>
+      </form>
+    </section>
+    <section class="modal modal-map">
+      <h3 class="visually-hidden">Местоположение</h3>
+      <p>
+        <img src="img/big-map.jpg" width="940" height="446,2" alt="Офис компании по адресу
+        ул. Большая Конюшенная 19, Санкт-Петербург">
+      </p>
+      <button class="modal-close">Закрыть</button>
+    </section>
+    <section class="modal modal-choosing">
+      <h3 class="visually-hidden">Выбор товара</h3>
+      <div>
+        <p>Товар добавлен в корзину!</p>
+        <a class="buttons" href="ordered-item.html">Оформить заказ</a>
+        <a class="buttons" href="pagination.html">Продолжить покупки</a>
+      </div>
+      <button class="modal-close">Закрыть</button>
+    </section>
   </body>
 </html>
