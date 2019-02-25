@@ -3,10 +3,14 @@
   <head>
     <meta charset="utf-8"/>
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <div>
+      <div class="user-header">
         <img src="img/logo.svg" width="110" height="18" alt="Логотип магазина Техномарт"/>
         <form action="https://echo.htmlacademy.ru" method="get" class="search-for-site">
           <label for="search">Поиск:</label>
@@ -15,9 +19,10 @@
         <ul class="choice-item">
           <li><a href="bookmark-item.html">Закладки</a></li>
           <li><a href="choose-item.html">Корзина</a></li>
-          <li><a href="ordered-item.html">Оформить заказ</a></li>
+          <li class="order-button"><a href="ordered-item.html">Оформить заказ</a></li>
         </ul>
       </div>
+      <div class="low-header">
       <div>
         <h1>
           Интернет-магазин строительных материалов и инструментов для ремонта
@@ -47,6 +52,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <main class="container">
       <section class="promo">
@@ -68,14 +74,16 @@
           <div class="promo-sliders">
             <h2 class="visually-hidden">Промо-слайды</h2>
             <div class="slider-1">
-              <p class="">Дрели соседям на радость!</p>
+              <p class="slider-title">Дрели</p>
+              <p class="slider-description">Cоседям на радость!</p>
               <img src="img/slider-1.jpg" width="620" height="266" alt="Дрель"/>
               <p class="catalog-button">
                 <a href="catalog.html">Открыть каталог</a>
               </p>
             </div>
             <div class="slider-2">
-              <p class="">Перфораторы настоящие мужские игрушки</p>
+              <p class="slider-title">Перфораторы</p>
+              <p class="slider-description">Настоящие мужские игрушки</p>
               <img src="img/slider-2.jpg" width="620" height="266" alt="Перфоратор"/>
             </div>
             <div class="controls">
@@ -109,8 +117,8 @@
               <p class="new-price">25500 ₽</p>
             </div>
             <div class="hidden-block">
-              <a class="button" href="#">Купить</a>
-              <a class="button" href="#">В закладки</a>
+              <a class="button-buy" href="#">Купить</a>
+              <a class="button-bookmark" href="#">В закладки</a>
             </div>
           </li>
           <li class="popular-item">
@@ -123,8 +131,8 @@
               <p class="new-price">15500 ₽</p>
             </div>
             <div class="hidden-block">
-              <a class="button" href="#">Купить</a>
-              <a class="button" href="#">В закладки</a>
+              <a class="button-buy" href="#">Купить</a>
+              <a class="button-bookmark" href="#">В закладки</a>
             </div>
           </li>
           <li class="popular-item">
@@ -137,8 +145,8 @@
               <p class="new-price">25500 ₽</p>
             </div>
             <div class="hidden-block">
-              <a class="button" href="#">Купить</a>
-              <a class="button" href="#">В закладки</a>
+              <a class="button-buy" href="#">Купить</a>
+              <a class="button-bookmark" href="#">В закладки</a>
             </div>
           </li>
           <li class="popular-item">
@@ -150,8 +158,8 @@
               <p class="new-price">12500 ₽</p>
             </div>
             <div class="hidden-block">
-              <a class="button" href="#">Купить</a>
-              <a class="button" href="#">В закладки</a>
+              <a class="button-buy" href="#">Купить</a>
+              <a class="button-bookmark" href="#">В закладки</a>
             </div>
           </li>
         </ul>
@@ -161,47 +169,47 @@
           <h2>Популярные производители:</h2>
           <p><a href="brands.html">Все производители</a></p>
         </div>
-        <ul class="popopular-brands-list">
-          <li class="popopular-brands-item">
+        <ul class="popular-brands-list">
+          <li class="popular-brands-item">
             <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="BOSCH"/></a>
           </li>
-          <li class="popopular-brands-item">
+          <li class="popular-brands-item">
             <a href="#"><img src="img/makita.jpg" width="123" height="40" alt="Makita"/></a>
           </li>
-          <li class="popopular-brands-item">
+          <li class="popular-brands-item">
             <a href="#"><img src="img/de-walt.jpg" width="146" height="44" alt="DeWALT"/></a>
           </li>
-          <li class="popopular-brands-item">
+          <li class="popular-brands-item">
             <a href="#"><img src="img/interscol.jpg" width="200" height="88" alt="Интерскол"/></a>
           </li>
-          <li class="popopular-brands-item">
+          <li class="popular-brands-item">
             <a href="#"><img src="img/hitachi.jpg" width="169" height="31" alt="HITACHI"/></a>
           </li>
-          <li class="popopular-brands-item">
+          <li class="popular-brands-item">
             <a href="#"><img src="img/lg.jpg" width="121" height="73" alt="LG"/></a>
           </li>
-          <li class="popopular-brands-item">
+          <li class="popular-brands-item">
             <a href="#"><img src="img/aeg.jpg" width="151" height="96" alt="AEG"/></a>
           </li>
-          <li class="popopular-brands-item">
+          <li class="popular-brands-item">
             <a href="#"><img src="img/metabo.jpg" width="204" height="69" alt="metabo"/></a>
           </li>
         </ul>
       </section>
       <section class="service">
-        <h3>Сервисы</h3>
-        <p>
+        <h2>Сервисы</h2>
+        <p class="service-preview">
           Хороший интернет-магазин отличается от плохого не только ценами! Мы
           стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
         <ul class="service-list">
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
+          <li><button class="button-service-list">Доставка</button></li>
+          <li><button class="button-service-list">Гарантия</button></li>
+          <li><button class="button-service-list">Кредит</button></li>
         </ul>
         <ul class="service-description">
           <li>
-            <h4>Доставка</h4>
+            <h3 class="delivery">Доставка</h3>
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду
               совершенно бесплатно! Ведь мы неплохо заработаем,<br/>
@@ -209,7 +217,7 @@
             </p>
           </li>
           <li>
-            <h4>Гарантия</h4>
+            <h3 calss="warranty">Гарантия</h3>
             <p>
               Если купленный у нас товар поломается или заискрит,<br/>
               а также в случае пожара, спровоцированного его возгаранием, вы
@@ -219,7 +227,7 @@
             </p>
           </li>
           <li>
-            <h4>Кредит</h4>
+            <h3 class="credit">Кредит</h3>
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты придут
               вам на помощь.
@@ -289,10 +297,10 @@
           &#169; 2010-2019 Компания "Техномарт" Все права защищены
         </p>
         <div class="footer-social">
-          <ul>
-            <li><a class="social-button" href="#">Вконтакте</a></li>
-            <li><a class="social-button" href="#">Фейсбук</a></li>
-            <li><a class="social-button" href="#">Инстаграм</a></li>
+          <ul class="footer-social">
+            <li><a class="social-button" href="#"><img src="img/vk-icon.svg" alt=Вконтакте></a></li>
+            <li><a class="social-button" href="#"><img src="img/fb-icon.svg" alt=Фейсбук></a></li>
+            <li><a class="social-button" href="#"><img src="img/insta-icon.svg" alt=Инстаграм></a></li>
           </ul>
         </div>
         <p class="feedback-mail">
