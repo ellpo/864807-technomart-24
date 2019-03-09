@@ -299,7 +299,8 @@ a {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
-.popular-item a {
+.popular-item a,
+.catalog-item a {
   color: #000000;
 }
 .old-price {
@@ -625,6 +626,244 @@ p.feedback {
 .footer-social a:active {
   background-color: #ee3643;
 }
+.basket-active a {
+  background-color: #ee3643;
+}
+.accaunt-personal-menu {
+  list-style: none;
+}
+.accaunt-personal-menu {
+  display: flex;
+  width: 210px;
+  font-size: 16px;
+  line-height: 18px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  padding-left: 17px;
+}
+
+.accaunt-personal-menu a {
+  color: #32425c;
+  text-decoration: underline;
+}
+.user-name {
+  display: flex;
+  width: 299px;
+  background-color: #ffffff;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  padding-left: 13px;
+  padding-right: 10px;
+}
+.user-name a {
+  color: #000000;
+}
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  padding-top: 25px;
+  align-items: center;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+.breadcrumbs a {
+  color: #000;
+}
+.breadcrumbs li {
+  padding: 0;
+  padding-right: 39px;
+}
+.page-title {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #f2f6f8;
+  width: 100%;
+  padding-left: 30px;
+  margin-top: 25px;
+}
+h2.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #32425c;
+  padding-top: 32px;
+  padding-bottom: 34px;
+}
+.main-filter-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+ .main-filter-menu h3 {
+  background-color: #f7f3ec;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+}
+h3.content-name {
+  margin: 0;
+  padding: 0;
+  width: 220px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.sort {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f3ec;
+  width: 700px;
+  align-items: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 19px;
+  padding-right: 14px;
+}
+.sort h3 {
+  margin: 0;
+  padding: 0;
+  padding-right: 139px;
+}
+.sort a {
+  background-color: #f7f3ec;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.18);
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+  text-decoration-style: dotted;
+}
+.sort a:hover {
+  color: #000;
+  text-decoration-style: solid;
+}
+.sort a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+.catalog {
+    margin-top: 20px;
+}
+.main-content {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+.filters {
+  width: 220px;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000;
+}
+.brands-choosing li,
+.supply li,
+.hummer-drill-list li
+ {
+  list-style: none;
+}
+.brands-choosing,
+.supply-choosing {
+  margin: 0;
+  padding: 0;
+}
+.brands-filter {
+  margin-top: 51px;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.brands-filter h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+.supply {
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.supply h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-bottom: 12px;
+}
+.filter-button {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 39px;
+  padding-right: 39px;
+  text-transform: uppercase;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  margin-top: 70px;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.hummer-drill-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 700px;
+
+}
+.about-hummer-drill {
+  color: #000;
+}
+.catalog-item {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  width: 218px;
+}
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
 .modal {
   display: none;
+
 }
