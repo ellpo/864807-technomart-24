@@ -16,14 +16,14 @@
             <div class="logo">
               <img src="img/logo.svg" width="110" height="18" alt="Логотип магазина Техномарт"/>
             </div>
-            <form action="https://echo.htmlacademy.ru" method="get" class="search-for-site">
-              <label for="search">Поиск:</label>
-              <input type="search" name="search" id="search">
+            <form class="search" action="https://echo.htmlacademy.ru" method="get">
+              <label for="search"></label>
+              <input type="search" name="search" id="search" placeholder="Поиск:">
             </form>
           </div>
-          <ul class="user-header-right choice-item">
-            <li><a class="bookmark-link" href="bookmark-item.html">Закладки:</a></li>
-            <li><a class="basket-link" href="choose-item.html">Корзина:</a></li>
+          <ul class="user-header-right">
+            <li class="bookmark-link"><a href="bookmark-item.html">Закладки:</a></li>
+            <li class="basket-link"><a href="choose-item.html">Корзина: 0</a></li>
             <li class="order-button"><a href="ordered-item.html">Оформить заказ</a></li>
           </ul>
         </div>
@@ -49,7 +49,7 @@
         </div>
       <nav class="main-navigation wrapper">
         <ul class="main-site-navigation">
-          <li><a href="index.html">Главная</a></li>
+          <li><a class="main-page" href="index.html">Главная</a></li>
           <li><a href="campany-info.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="news.html">Новости</a></li>
@@ -91,6 +91,9 @@
               <p class="slider-title">Перфораторы</p>
               <p class="slider-description">Настоящие мужские игрушки</p>
               <img src="img/slider-1.jpg" width="620" height="266" alt="Перфоратор"/>
+              <a class="catalog-button" href="catalog.html">Открыть каталог</a>
+              <a class="button-next" href=""></a>
+              <a class="button-back" href=""></a>
             </div>
           </div>
           <div class="promo-three">
@@ -111,7 +114,7 @@
           <a class="popular-button" href="popular-catalog.html">Все популярные товары</a>
         </div>
         <ul class="popular-catalog-preview">
-          <li class="popular-item">
+          <li>
             <div class="catalog-item">
               <div class="actions">
                   <a href="#" class="buy">Купить</a>
@@ -123,7 +126,7 @@
               <div class="price">25 500 Р.</div>
             </div>
           </li>
-          <li class="popular-item">
+          <li>
             <div class="catalog-item">
               <div class="actions">
                   <a href="#" class="buy">Купить</a>
@@ -135,7 +138,7 @@
               <div class="price">15 500 Р.</div>
             </div>
           </li>
-          <li class="popular-item">
+          <li>
             <div class="catalog-item">
               <div class="actions">
                   <a href="#" class="buy">Купить</a>
@@ -147,7 +150,7 @@
               <div class="price">25 500 Р.</div>
             </div>
           </li>
-          <li class="popular-item">
+          <li>
             <div class="catalog-item">
               <div class="flag flag-new">новинка</div>
                 <div class="actions">
@@ -269,7 +272,7 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <p class="more-about-company"><a href="campany-info.html">Подробнее о компании</a></p>
+          <p><a class="more-about-company" href="campany-info.html">Подробнее о компании</a></p>
         </div>
         <div class="contacts-list">
           <h3>Контакты</h3>
@@ -319,7 +322,7 @@
         </p>
         <div class="footer-social">
           <ul class="footer-social">
-            <li><a class="social-button btn-vk" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt=Вконтакте></a></li>
+            <li><a class="social-button btn-vk" href="#"><img src="img/vk-icon.svg" alt=Вконтакте></a></li>
             <li><a class="social-button btn-fb" href="#"><img src="img/fb-icon.svg" alt=Фейсбук></a></li>
             <li><a class="social-button btn-insta" href="#"><img src="img/insta-icon.svg" alt=Инстаграм></a></li>
           </ul>
