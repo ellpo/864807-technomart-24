@@ -290,9 +290,12 @@ img {
 }
 
 .account-menu-registration {
-    margin-left: 10px;
     width: 150px;
     text-align: center;
+}
+
+.account-menu li:not(:first-child) {
+  margin-left: 10px;
 }
 
 .account-menu-enter::before {
@@ -320,6 +323,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 }
@@ -856,7 +860,7 @@ p.feedback-mail {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    margin-top: 8px;
+    margin-top: 9px;
     padding-left: 17px;
 }
 
@@ -870,6 +874,7 @@ p.feedback-mail {
     content: "";
     width: 4px;
     height: 4px;
+    vertical-align: middle;
     margin-left: 14px;
     margin-right: 12px;
     margin-top: 6px;
@@ -890,8 +895,9 @@ p.feedback-mail {
 .user-name {
     background-color: #ffffff;
     font-size: 21px;
-    line-height: 24px;
-    padding: 10px 0;
+    line-height: 21px;
+    padding-top: 10px;
+    padding-bottom: 13px;
 }
 
 .user-name a {
@@ -901,6 +907,7 @@ p.feedback-mail {
 .user-profile-icon::before {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 20px;
     height: 18px;
     background-image: url("../img/icon-user.svg");
@@ -928,6 +935,7 @@ a.home-page-link {
 .home-page-link::after {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     width: 20px;
     height: 17px;
     background-image: url("../img/icon-logout.svg");
@@ -984,6 +992,7 @@ a.home-page-link {
 .breadcrumbs li:not(.icon-home)::before {
     content: "";
     display: inline-block;
+    vertical-align: text-top;
     height: 12px;
     width: 8px;
     margin-left: 16px;
@@ -1088,9 +1097,10 @@ a.home-page-link {
 .dash {
     content: "";
     display: inline-block;
+    vertical-align: middle;
     margin-right: 9px;
     margin-left: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 9px;
     width: 10px;
     height: 1px;
     background-color: #444444;
@@ -1287,6 +1297,7 @@ h3.content-name {
 input[type="checkbox"],
 input[type="radio"] {
     display: none;
+
 }
 
 .brands-choosing li {
@@ -1340,6 +1351,8 @@ input[type="radio"] {
 .filter-input-checkbox + label:hover::before {
     opacity: 0.5;
 }
+
+
 
 .supply-choosing li {
     margin-left: 34px;
@@ -1837,7 +1850,6 @@ a.next-page {
 }
 
 .radio-button-back {
-    display: inline-block;
     content: "";
     position: absolute;
     bottom: 43px;
@@ -1849,7 +1861,6 @@ a.next-page {
 }
 
 .radio-button-next {
-    display: inline-block;
     content: "";
     position: absolute;
     bottom: 43px;
@@ -1917,7 +1928,6 @@ a.next-page {
 
 .catalog-item {
     position: relative;
-    display: inline-block;
     width: 218px;
     line-height: 20px;
     font-weight: bold;
@@ -2208,6 +2218,11 @@ a.next-page {
     margin: 0;
 }
 
+.warranty,
+.credit {
+  display: none;
+}
+
 .service-preview {
     margin-bottom: 67px;
 }
@@ -2225,19 +2240,19 @@ a.next-page {
 }
 
 .service-list {
-    position: relative;
     margin: 0;
     padding: 0;
+    width: 240px;
     padding-right: 81px;
     padding-bottom: 100px;
 }
 
-.service-list::before {
+.delivery::before {
     position: absolute;
     content: "";
     width: 10px;
     height: 279px;
-    left: 229px;
+    left: 230px;
     bottom: 48px;
     background-image: url("../img/shadow.png");
     background-position: 0 0;
@@ -2248,6 +2263,7 @@ a.next-page {
 }
 
 .delivery {
+  position: relative;
     background-image: url("../img/service-1.png");
     background-size: 468px 261px;
     background-position: 471px 25px;
@@ -2315,13 +2331,36 @@ a.next-page {
 }
 
 .btn-active {
-    padding-right: 140px;
     background-color: #ffffff;
     color: #32425c;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
+.btn-delivery {
+    padding-top: 16px;
+    padding-left: 22px;
+    padding-bottom: 18px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn-warranty {
+      padding-top: 14px;
+      padding-left: 22px;
+      padding-bottom: 17px;
+      width: 100%;
+      text-align: left;
+  }
+
+  .btn-credit {
+      padding-top: 15px;
+      padding-left: 22px;
+      padding-bottom: 17px;
+      width: 100%;
+      text-align: left;
+
+/*
 .btn-delivery {
     padding-top: 16px;
     padding-left: 22px;
@@ -2342,6 +2381,7 @@ a.next-page {
     padding-bottom: 17px;
     padding-right: 160px;
 }
+*/
 
 .warranty,
 .credit,
