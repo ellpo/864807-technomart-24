@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8"/>
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/style.min.css" rel="stylesheet"/>
   </head>
   <body>
     <header class="main-header inner">
@@ -43,9 +42,9 @@
           </div>
           <div class="account">
             <div class="user-name">
-              <a class="user-profile-icon" href="user-profile.ru"></a>
-              <a class="user-profile" href="user-profile.ru">Равшан Джамшутович </a>
-              <a class="home-page-link" href="index.html"></a>
+              <a class="user-profile-icon" href="user-profile.ru" aria-label="Войти в профиль"></a>
+              <a class="user-profile" href="user-profile.ru">Равшан Джамшутович</a>
+              <a class="home-page-link" href="index.html" aria-label="Выйти"></a>
             </div>
             <ul class="account-personal-menu">
               <li><a class="order-history" href="order-history.ru">Мои заказы</a></li>
@@ -70,7 +69,7 @@
     <main class="container inner">
       <ul class="breadcrumbs wrapper">
         <li class="icon-home">
-          <a href="index.html">
+          <a href="index.html" aria-label="Вернуться на главную">
             <img src="img/icon-home.svg" width="14" height=12 alt="Вернуться на главную"/>
           </a>
         </li>
@@ -144,13 +143,17 @@
         <div class="catalog-content">
           <div class="sort">
             <h3>Сортировка:</h3>
-            <a class="btn-sort active-sort" href="">По цене</a>
-            <a class="btn-sort" href="">По типу</a>
-            <a class="btn-sort" href="">По функционалу</a>
-            <div class="sort-buttons">
-            <a class="sort-buttons up active-sort-button" href=""></a>
-            <a class="sort-buttons down" href=""></a>
-            </div>
+            <ul class="sort-list">
+            <li><a class="btn-sort active-sort" href="">По цене</a></li>
+              <li><a class="btn-sort" href="">По типу</a></li>
+              <li><a class="btn-sort" href="">По функционалу</a></li>
+              <li>
+              <div class="sort-buttons">
+                <a class="sort-buttons up active-sort-button" href="" aria-label="По возрастанию"></a>
+                <a class="sort-buttons down" href="" aria-label="По убыванию"></a>
+              </div>
+            </li>
+            </ul>
           </div>
           <h3 class="visually-hidden">Список перфораторов</h3>
           <ul class="hummer-drill-list">
@@ -321,11 +324,11 @@
             <p class="footer-copyright">
               &#169; 2010-2019 Компания «Техномарт» Все права защищены
             </p>
-            <div class="footer-social">
+            <div class="footer-social-list">
               <ul class="footer-social">
-                <li><a class="social-button btn-vk" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
-                <li><a class="social-button btn-fb" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-                <li><a class="social-button btn-insta" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+                <li><a class="social-button btn-vk" href="#" aria-label="Вконтакте"></a></li>
+                <li><a class="social-button btn-fb" href="#" aria-label="Фейсбук"></a></li>
+                <li><a class="social-button btn-insta" href="#" aria-label="Инстаграмм"></a></li>
               </ul>
             </div>
             <div class="about-developer">
